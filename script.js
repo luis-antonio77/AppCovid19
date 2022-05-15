@@ -16,4 +16,17 @@ async function clickBoton(){
 
     let estadisticas = json.dates['2020-05-05'].countries.Spain;
     console.log(estadisticas);
+
+
+    today_confirmed: 221458
+    today_deaths: 25854
+    today_hospitalised_patients_with_symptoms: 0
+    today_intensive_care: 11059
+    today_new_confirmed: 873
+    today_new_deaths: 244
+    today_new_hospitalised_patients_with_symptoms: 0
+    today_new_intensive_care: 51
+    today_new_open_cases: -1887
+    today_new_recovered: 2516
+    today_new_total_hospitalised_patients: 829
 }
