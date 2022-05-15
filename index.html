@@ -5,20 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App del Covid19</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-    <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">App del Covid19</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/luisantonio.navarrocadena/">Autor</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
         <h1>Estadisticas del Covid19</h1>
-        <b>Fecha</b> <input id="inputFecha" type="date"/><br>
-        <b>Pais</b>
-        <select id="selectPais">
+        <b>Fecha</b> <input id="inputFecha" type="date" class="form-control"/><br>
+        <b>Pais:</b>
+        <select id="selectPais" class="form-select">
             <option value="Spain">España</option>
             <option value="Germany">Alemania</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Italy">Italia</option>
+            <option value="Chile">Chile</option>
+            <option value="Peru">Peru</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Mexico">Mexico</option>
         </select><br>
-        <button id="btnMostrar">Mostrar Estadisticas</button>
+        
+        <button id="btnMostrar" type="button" class="btn btn-primary">Mostrar Estadisticas</button>
     </div> <br>
 
-    <ul>
+    <ul class="container">
         <li>Casos confirmados: <span id="today_confirmed"></span> </li>
         <li>Muertes: <span id="today_deaths"></span> </li>
         <li>Pacientes hospitalizados con sintomas: <span id="today_hospitalised_patients_with_symptoms"></span> </li>
