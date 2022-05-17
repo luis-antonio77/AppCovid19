@@ -8,44 +8,40 @@
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">App del Covid19</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#"><strong>Descripción</strong>
-                    <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="https://www.facebook.com/luisantonio.navarrocadena/"><strong>Autor</strong>
-                    <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">App del Covid19</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Descripción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Autor</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
 
     <div class="container">
-        <h1>Estadisticas del Covid19</h1>
-        <b>Fecha</b> <input id="inputFecha" type="date" class="form-control"/><br>
+        <h1>Estadísticas del Covid19</h1>
+        <b>Fecha:</b> <input id="inputFecha" type="date" class="form-control" style="width: 330px"/><br>
         <b>Pais:</b>
-        <select id="selectPais" class="form-select">
+        <select id="selectPais" class="form-select" style="width: 330px">
             <option value="Spain">España</option>
             <option value="Germany">Alemania</option>
             <option value="Colombia">Colombia</option>
             <option value="Argentina">Argentina</option>
             <option value="Italy">Italia</option>
             <option value="Chile">Chile</option>
-            <option value="Peru">Peru</option>
+            <option value="Peru">Perú</option>
             <option value="Paraguay">Paraguay</option>
-            <option value="Mexico">Mexico</option>
+            <option value="Mexico">México</option>
         </select><br>
         
         <button id="btnMostrar" type="button" class="btn btn-primary">Mostrar Estadisticas</button>
@@ -59,7 +55,7 @@
         <li>Nuevos casos confirmados: <span id="today_new_confirmed"></span> </li>
         <li>Nuevas muertes: <span id="today_new_deaths"></span> </li>
         <li>Nuevos pacientes hospitalizados con síntomas: <span id="today_new_hospitalised_patients_with_symptoms"></span> </li>
-        <li>Nuevos Cuidados intensivos: <span id="today_new_intensive_care"></span> </li>
+        <li>Nuevos cuidados intensivos: <span id="today_new_intensive_care"></span> </li>
         <li>Nuevos casos abiertos: <span id="today_new_open_cases"></span> </li>
         <li>Nuevos recuperados: <span id="today_new_recovered"></span> </li>
         <li>Nuevos pacientes hospitalizados: <span id="today_new_total_hospitalised_patients"></span> </li>
